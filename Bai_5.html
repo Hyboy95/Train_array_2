@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai_5</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+  let str_1 = prompt('Nhập vào chuỗi 1:');
+  let str_2 = prompt('Nhập vào chuỗi 2:');
+  let arr_1 = str_1.split('');
+  let arr_2 = str_2.split('');
+  let check = true;
+
+  if (arr_1.length === arr_2.length) {
+    for (let i = 0; i < arr_1.length; i++) {
+      if (arr_1[i] !== arr_2[i]) {
+        check = false;
+        break;
+      }
+    }
+  } else {
+    check = false;
+  }
+
+  if (check) {
+    alert(`2 chuỗi nhập vào giống nhau`);
+  } else {
+    alert(`2 chuỗi nhập vào không giống nhau`);
+  }
+</script>

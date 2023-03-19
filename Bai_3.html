@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai_3</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+  let arr = ['1','a','2','-3'];
+  document.write(`Mảng: [${arr}] <br>`);
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (!isNaN(parseInt(arr[i]))) {
+      count++;
+    }
+  }
+    document.write(`Số kí tự số trong mảng là: ${count}`);
+</script>
